@@ -28,10 +28,10 @@ cd /usr/share/swatchdog/
 sudo perl Makefile.PL
 sudo make install
 read -p " What is the hostname of the server : " SERVER
-echo " #Send an email for exception errors
+echo '#Send an email for exception errors
 watchfor   /^(.+?(exception).+)$/
         echo=red
-        exec "echo '$1' | mail -s 'PLEASE INVESTIGATE $SERVER JAVA LOGS "EXCEPTIONS" ERRORS' user@domain.com "
-        bell 2 " >> /etc/swatch.conf
+        exec \"echo \'$1\' | mail -s \'PLEASE INVESTIGATE $SERVER JAVA LOGS EXCEPTIONS ERRORS\' user@domain.com \"
+        bell 2 ' >> tee /etc/swatch.conf
 
 
