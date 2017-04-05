@@ -31,7 +31,7 @@ read -p " What is the hostname of the server : " SERVER
 echo " #Send an email for exception errors
 watchfor   /^(.+?(exception).+)$/
         echo=red
-        exec "echo '$1' | mail -s 'PLEASE INVESTIGATE $SERVER JAVA LOGS "EXCEPTIONS" ERRORS'user@domain.com "
+        exec "echo '$1' | mail -s 'PLEASE INVESTIGATE $SERVER JAVA LOGS "EXCEPTIONS" ERRORS' user@domain.com "
         bell 2 " >> /etc/swatch.conf
 
 
