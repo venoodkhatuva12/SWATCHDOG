@@ -14,7 +14,7 @@ sudo yum install perl-CPAN wget gcc -y
 cd /usr/share/
 wget http://downloads.sourceforge.net/project/swatch/swatchdog/swatchdog-3.2.4.tar.gz
 sudo tar -zxvf swatchdog-3.2.4.tar.gz
-mv swatchdog-3.2.4 swatch
+mv swatchdog-3.2.4 swatchdog
 cd /usr/share/swatchdog/
 sudo cpan -i Date::Format File::Tail
 sudo cpan -i Date::Manip Date::Calc
